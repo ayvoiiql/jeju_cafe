@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap');
+
+:root {
+    --jeju-orange: #FF7A32;
+    --jeju-orange-dark: #E85D1F;
+    --jeju-teal: #1B7A6E;
+    --jeju-teal-dark: #14584F;
+    --jeju-cream: #FFF8F0;
+    --jeju-text: #2B2B2B;
+}
+
+html, body, [class*="css"] {
+    font-family: 'Gowun Dodum', 'Noto Sans KR', sans-serif;
+}
+
+.stApp {
+    background: linear-gradient(180deg, var(--jeju-cream) 0%, #FFFFFF 320px);
+}
+
+/* ---- Hero banner ---- */
+.st-key-hero {
+    background: linear-gradient(120deg, var(--jeju-teal) 0%, var(--jeju-teal-dark) 100%);
+    border-radius: 18px;
+    padding: 28px 32px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 18px rgba(20, 88, 79, 0.25);
+}
+
+.st-key-hero h1 {
+    font-family: 'Jua', 'Gowun Dodum', sans-serif;
+    color: #FFFFFF;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.st-key-hero p {
+    color: #E4F3EF;
+    margin: 6px 0 0 0;
+    font-size: 0.95rem;
+}
+
+/* ---- Sidebar ---- */
+[data-testid="stSidebar"] {
+    background-color: var(--jeju-teal-dark);
+}
+
+[data-testid="stSidebar"] * {
+    color: #F5FBF9 !important;
+}
+
+[data-testid="stSidebar"] h2, [data-testid="stSidebar"] h3 {
+    font-family: 'Jua', sans-serif;
+    color: var(--jeju-orange) !important;
+}
+
+[data-testid="stSidebar"] .stMultiSelect [data-baseweb="tag"] {
+    background-color: var(--jeju-orange) !important;
+}
+
+/* ---- Stat / metric card ---- */
+.st-key-stats {
+    background-color: #FFFFFF;
+    border: 1px solid #F0E0D0;
+    border-radius: 14px;
+    padding: 10px 20px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+[data-testid="stMetricValue"] {
+    color: var(--jeju-orange-dark);
+    font-weight: 700;
+}
+
+[data-testid="stMetricLabel"] {
+    color: var(--jeju-teal-dark);
+    font-weight: 600;
+}
+
+/* ---- Map card ---- */
+.st-key-map_card {
+    background-color: #FFFFFF;
+    border-radius: 18px;
+    padding: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #EFE6DA;
+}
+
+.st-key-map_card iframe {
+    border-radius: 12px;
+}
+
+/* ---- Expander (data table) ---- */
+[data-testid="stExpander"] {
+    border-radius: 14px;
+    border: 1px solid #EFE6DA;
+    background-color: #FFFFFF;
+}
+
+/* ---- Footer ---- */
+.jeju-footer {
+    text-align: center;
+    color: #9A9A9A;
+    font-size: 0.8rem;
+    margin-top: 24px;
+}
